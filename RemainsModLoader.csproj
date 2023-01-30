@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RemainsModLoader</AssemblyName>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Description>A mod loader, manager, and helper for Remains.</Description>
+    <Version>1.0.1</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>RemainsModLoader</RootNamespace>
+
+    <PackageId>remainsmodding.RemainsModLoader</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>RedstoneWizard08</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/remainsmodding/RemainsModLoader</RepositoryUrl>
+    <RespositoryType>git</RespositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Libraries/Publicized/Assembly-CSharp.dll" />
+    <Reference Include="Libraries/Publicized/Assembly-CSharp-firstpass.dll" />
+
+    <Reference Include="Libraries/Default/Unity.Addressables.dll" />
+    <Reference Include="Libraries/Default/Unity.Burst.dll" />
+    <Reference Include="Libraries/Default/Unity.Burst.Unsafe.dll" />
+    <Reference Include="Libraries/Default/Unity.InputSystem.dll" />
+    <Reference Include="Libraries/Default/Unity.Mathematics.dll" />
+    <Reference Include="Libraries/Default/Unity.ProBuilder.dll" />
+    <Reference Include="Libraries/Default/Unity.ProBuilder.KdTree.dll" />
+    <Reference Include="Libraries/Default/Unity.ProBuilder.Poly2Tri.dll" />
+    <Reference Include="Libraries/Default/Unity.RenderPipeline.Universal.ShaderLibrary.dll" />
+    <Reference Include="Libraries/Default/Unity.RenderPipelines.Core.Runtime.dll" />
+    <Reference Include="Libraries/Default/Unity.RenderPipelines.Universal.Runtime.dll" />
+    <Reference Include="Libraries/Default/Unity.ResourceManager.dll" />
+    <Reference Include="Libraries/Default/Unity.TextMeshPro.dll" />
+    <Reference Include="Libraries/Default/Unity.Timeline.dll" />
+    <Reference Include="Libraries/Default/Unity.VisualEffectGraph.Runtime.dll" />
+
+    <Reference Include="Libraries/Default/UnityEngine.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.CoreModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.AudioModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.AssetBundleModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.DirectorModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.AnimationModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.IMGUIModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.GridModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.ImageConversionModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.InputLegacyModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.InputModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.AIModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.ParticleSystemModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.SharedInternalsModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.SpriteShapeModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.SubsystemsModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.TilemapModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.PhysicsModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.Physics2DModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.TerrainModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.JSONSerializeModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.TextRenderingModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.TextCoreTextEngineModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.TextCoreFontEngineModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.UI.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.UIModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.UnityWebRequestModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.UnityWebRequestWWWModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.VFXModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.VideoModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.VRModule.dll" />
+    <Reference Include="Libraries/Default/UnityEngine.XRModule.dll" />
+
+    <Reference Include="Libraries/Default/DOTween.dll" />
+    <Reference Include="Libraries/Default/GalaxyCSharp.dll" />
+
+    <Reference Include="Libraries/Default/Ak.Wwise.Api.WAAPI.dll" />
+    <Reference Include="Libraries/Default/AK.Wwise.Unity.Addressables.dll" />
+    <Reference Include="Libraries/Default/AK.Wwise.Unity.API.dll" />
+    <Reference Include="Libraries/Default/AK.Wwise.Unity.API.WwiseTypes.dll" />
+    <Reference Include="Libraries/Default/AK.Wwise.Unity.MonoBehaviour.dll" />
+    <Reference Include="Libraries/Default/AK.Wwise.Unity.Timeline.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
